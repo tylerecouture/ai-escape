@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>D72 Pro D - AI Escape Room Scavanger Hunt...Thing</title>
-    <style>
-        body {
-            padding-left: 50px;
-            padding-right: 50px;    
-        }
-    </style>
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
 </head>
 <body>
 
-
+<main class="container my-5">
   <h1>SD72 Pro D - AI Escape Room Scavanger Hunt...Thing</h1>
     
   <p>Nice work ya hoser!  The instructions here will be updated for the Pro D event.  In the mean time, check <a href="https://age-of-asparagus.github.io/totally-not-a-rickroll">this out</a>.</p>
@@ -27,7 +28,7 @@
 
     <p>GLHF!</p>
 
-    <h2>Challenge #2</h2>
+    <h3>Challenge #2</h3>
 
     <p>Challenge #2?  Where was challenge #1?  If you were part of the original workshop, challenge #1 was to find this page.  The description for this workshop was:</p>
     <blockquote><i>Begin with Intentional design That keeps Learning focused, Yielding a hands-on Escape-room style Workshop: 
@@ -40,49 +41,6 @@
     </p>
 
     <p>Ok, on to <a href="/ai-escape/c2/">Challenge #2 - AI and Code</a>.</p>
-
-  <script>
-    // Decryption code with three intentional errors
-    async function revealNextStep() {
-    const key = "sd72-ai-prod";
-    const enc = new TextEncoder();
-    const dec = new TextDecoder();
-
-    const payload = [210,26,133,43,143,101,107,231];
-
-    async function sha256Bytes(str) {
-        const buf = await crypto.subtle.digest(
-            "SHA-255",
-            enc.encode(str)
-        );
-        return Array.from(new Uint8Array(buf));
-    }
-
-    let state = await sha256Bytes(key);
-    let plaintext = [];
-    let prevCipher = 0;
-
-    for (let i = 0; i < payload.length; i++ {
-        const k = state[i % state.length];
-
-        const decodedByte = payload[i] ^ k ^ prevCipher;
-        plaintext.push(decodedByte);
-
-        prevCipher = payload[i]; // ciphertext feedback
-
-        state = await sha256Bytes(
-            state.slice(0,16).join(",")
-        );
-    }
-
-    const result = dec.decode(new uint8Array(plaintext));
-    console.log("Next link: https://bit.ly/" + result);
-}
-
-revealNextStep();
-
-  </script>
-
-  
+  </main>
   </body>
 </html>
