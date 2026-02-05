@@ -22,4 +22,4 @@ async function generatePayload(slug) {
 }
 
 // Example
-generatePayload("escape42");
+generatePayload("4rER83f");
