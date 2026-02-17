@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Challenge #3 - AI and Images</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+
+    
+<!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    
+</head>
+<body>
+    <main class="container my-5">
+        <h1>Challenge #3 - AI and Images</h1>
+<hr>
+        <h3>Instructions</h3>
+
+        <p>I've collected and generated some images of classrooms for you. They are presented in a gallery below. 
+            Some of them are real images taken with a camera, 
+            and others are either completely AI generated or significanlty modified by AI.
+            To solve this challenge, you need to identify which images are real and which are AI generated/modified.
+            If you get stuck, there are some hints below the image gallery.
+        </p>
+        <p>Once you've determined which images are real, you can use the first letter of each image's filename to generate a url to the next challenge:</p>
+        <ol>
+            <li>Put the real images in alphabetical order by filename (they are already in alphabetical order in the gallery).
+            </li>
+            <li>Take the first letter of each real image's filename and concatenate them together to get a string of letters.  For example if <i>class43.jpg</i> and <i>room_big.jpg</i> and <i>y_am_i_doing_this.jpg</i> were the only three real images, then string would be "cry".</li>
+            <li>Generate a bit.ly link using the string of letters you generated.  For example, if your string was "cry", then you would generate a bit.ly link like: https://bit.ly/cry</li>
+        </ol>
+        <p>Some tips:</p>
+        <ul>
+            <li>You can use any AI tool you like to help you with this challenge.  Some tools are better at image analysis than others. Here are a few suggestions:
+                <ul>
+                    <li>Your eyeballs - If you've explored AI generated images before, you're own eyes will probably be able to pick out some of them.</li>
+                    <li><a href="https://wasitai.com/">WasItAI</a></li>
+                    <li><a href="https://www.zerogpt.com/ai-image-detector">ZeroGPT AI Image Detector</a></li>
+                    <li><a href="https://dashboard.sightengine.com/ai-image-detection">Sightengine</a> - Requires a free account.</li>
+                </ul>
+            </li>
+            <li>Triangulate!  Don't just use a single tool.  Often the tools above will contradict each other.</li>
+            <li>Text is often an obvious giveaway.  As of Feb 2026, text in AI-generated images is often illegible or nonesense.</li>
+            <li>Lighting! Last year.  This year, AI has become insanely good at generating realistic lighting, shadows and reflections, so don't get too distracted by lighting or you'll go insane.</li>
+            <li>Some other ideas: filenames, image metadata, and ask your LLM what else to look for!  You can even drop the image into your LLM and ask it what it thinks.</li>
+            <li>If you get stuck, there are some hints below the image gallery.</li>
+        </ul>
+<hr>
+        <h3>Image Gallery</h3>
+        <p>The images are provided below.  You can view them in the browser or download them to use with other tools.</p>
+
+        <!-- Responsive thumbnail grid that opens a GLightbox gallery -->
+<div class="container my-4">
+  <div class="row g-3">
+    <!-- Each image is wrapped in an <a> that points to the large image -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/classroom_school_learn_education_5.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="classroom_school_learn_education_5.jpg">
+        <img src="img/classroom_school_learn_education_5.jpg" class="img-fluid rounded shadow-sm" alt="classroom_school_learn_education_5.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/computers_education_class_0.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="computers_education_class_0.jpg">
+        <img src="img/computers_education_class_0.jpg" class="img-fluid rounded shadow-sm" alt="computers_education_class_0.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/desk_computers_classroom_notebook.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="desk_computers_classroom_notebook.jpg">
+        <img src="img/desk_computers_classroom_notebook.jpg" class="img-fluid rounded shadow-sm" alt="desk_computers_classroom_notebook.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/education_4.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="education_4.jpg">
+        <img src="img/education_4.jpg" class="img-fluid rounded shadow-sm" alt="education_4.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/japan_classroom_school_960260.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="japan_classroom_school_960260.jpg">
+        <img src="img/japan_classroom_school_960260.jpg" class="img-fluid rounded shadow-sm" alt="japan_classroom_school_960260.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/laptops_desks_classroom.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="laptops_desks_classroom.jpg">
+        <img src="img/laptops_desks_classroom.jpg" class="img-fluid rounded shadow-sm" alt="laptops_desks_classroom.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/mandarin_school_classroom.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="mandarin_school_classroom.jpg">
+        <img src="img/mandarin_school_classroom.jpg" class="img-fluid rounded shadow-sm" alt="mandarin_school_classroom.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/old_one_room.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="old_one_room.jpg">
+        <img src="img/old_one_room.jpg" class="img-fluid rounded shadow-sm" alt="old_one_room.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/openart-image_ZU5YQUKy_1770244303824_raw.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="openart-image_ZU5YQUKy_1770244303824_raw.jpg">
+        <img src="img/openart-image_ZU5YQUKy_1770244303824_raw.jpg" class="img-fluid rounded shadow-sm" alt="openart-image_ZU5YQUKy_1770244303824_raw.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/school_old_classroom.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="school_old_classroom.jpg">
+        <img src="img/school_old_classroom.jpg" class="img-fluid rounded shadow-sm" alt="school_old_classroom.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/skansen_stockholm_sweden.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="skansen_stockholm_sweden.jpg">
+        <img src="img/skansen_stockholm_sweden.jpg" class="img-fluid rounded shadow-sm" alt="skansen_stockholm_sweden.jpg">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <a href="img/traditional_classroom_school.jpg"
+         class="glightbox"
+         data-gallery="classrooms"
+         data-title="traditional_classroom_school.jpg">
+        <img src="img/traditional_classroom_school.jpg" class="img-fluid rounded shadow-sm" alt="traditional_classroom_school.jpg">
+      </a>
+    </div>
+  </div>
+</div>
+<p>All images are Public Domain under US Law.  Under Canadian Law, the real images are public domain and the AI generated/modified images are... uhhh... <a href="https://c.tenor.com/Ml8nTSv1Pg8AAAAd/tenor.gif">???</a></p>
+<hr>
+
+<h3>Hints if you get stuck</h3>
+        
+<details class="border rounded p-3">
+  <summary class="fw-bold">Hint 1: Exactly how many are real?</summary>
+  <p class="mt-2">7</p>
+</details>
+<details class="border rounded p-3">
+  <summary class="fw-bold">Hint 2: More help (this is basically cheating though)</summary>
+  <p class="mt-2">Use a reverse image search. Drop the images into <a target="_blank" href="https://tineye.com/"></a>Tineye</a> or <a target="_blank" href="https://images.google.com/">Google reverse image search</a>.</p>
+</details>
+
+
+    </main>
+
+<script>
+  // Initialize GLightbox after the DOM is ready
+  document.addEventListener('DOMContentLoaded', function () {
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      // You can customize more options here if you’d like:
+      // closeOnOutsideClick: true,
+      // plyr: { css: '', js: '' } // for videos
+    });
+  });
+</script>
+
+
+</body>
+</html>
